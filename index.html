@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Catalog Retrieval</title>
+      <!-- MDB -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.1/mdb.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+            <nav class="navbar navbar-expand-s navbar-light fixed-top" style="background-color: rgba(24,28,31,1.00);">
+            <div class="container-fluid">
+               <!-- Navbar brand -->
+               <a class="navbar-brand" target="_blank">
+               <img src="https://3472184593-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FW0UCgeNLp5UrqOZTjvsN%2Flogo%2FoWgZBPBgtqoknbm1rgdk%2FLogo_Horizontal_RW.svg?alt=media&token=c61d0b9f-4088-4622-8860-6155d7a256da" height="40" alt="" loading="lazy" />
+               </a>
+            </div>
+         </nav>
+   </head>
+   <body>
+      <div class="d-flex justify-content-center align-items-center vh-100">
+<div class="container">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-md-12 text-center">
+      <h3 class="mt-5">Flipbook Geo Location Demo</h3>
+      <div id="locationForm" class="mt-4">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-animation" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+          Start
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Disclaimer</h5>
+                <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+              </div>
+        <div class="modal-body" style="text-align: left;">
+                <p>Take a moment to read this important message before you proceed.</p>
+                <p>Our geo location demo works by using your IP address to give you an idea of your approximate location. We'll send your IP address to a server for a geolocation lookup. Just keep in mind that the accuracy of the location info might vary and it's purely for demonstration purposes.</p>
+                <p>By clicking "Find Me" you are acknowledging and agreeing to let us collect and use your IP address for the geo location demo.</p>
+              </div>
+              <div class="modal-footer">
+<button id="locationBtn" type="button" class="btn btn-primary btn-animation" data-mdb-dismiss="modal">
+  Find Me<span style="margin-left: 5px;"><i class="fas fa-search fa-sm"></i></span>
+</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-4 text-center">
+      <div id="locationInfo"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 mt-4 text-center">
+      <div id="catalogResults" class="mt-md-0 text-md-start"></div>
+    </div>
+  </div>
+</div>
+
+      </div>
+
+      <script>
+         // Initialize Bootstrap Material Design components
+         document.addEventListener('DOMContentLoaded', function() {
+           // Enable Bootstrap Material Design components
+           document.querySelectorAll('.form-control').forEach(function(element) {
+             new bootstrap.MaterialInput(element);
+           });
+        
+         });
+      </script>
+      <script src="script.js"></script>
+   </body>
+</html>

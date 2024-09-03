@@ -1,0 +1,68 @@
+.card-animation:hover {
+     transition: transform 0.3s ease-in-out;
+     transform: scale(1.05);
+}
+ .card-animation {
+     transition: transform 0.5s ease-out;
+}
+ .card-animation:hover {
+     transform: scale(1.05);
+}
+/* CSS Animation */
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+    }
+     100% {
+         opacity: 1;
+    }
+}
+body {
+  font-family: Montserrat;
+}
+
+.card-title{
+font-size:14px;
+  
+}
+ .btn-animation {
+     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+ .btn-animation:hover {
+     transform: scale(1.05);
+     background-color: #ff6b6b;
+}
+ .btn-animation {
+     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+ .btn-animation:hover {
+     transform: scale(1.05);
+     background-color: #ff6b6b;
+}
+ .badge-gradient {
+     background: linear-gradient(to right, #007bff, #dc3545);
+     color: white;
+     padding: 4px 8px;
+     border-radius: 4px;
+}
+ #intro {
+    /* Margin to fix overlapping fixed navbar */
+     margin-top: 100px;
+}
+ .btn-primary {
+     color: #fff;
+     background-color: #091722 !important;
+}
+ .btn-outline-primary {
+     color: #091722;
+     border-color: #091722;
+}
+ .btn-outline-primary:Hover {
+     color: #ee2737;
+     border-color: #ee2737;
+}
+ .btn-primary:hover {
+     color: #fff;
+     background-color: #ee2737 !important;
+}
+ 
